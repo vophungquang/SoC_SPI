@@ -1,0 +1,244 @@
+Info: Starting: Create testbench Platform Designer system
+Info: D:/th_soc/f/SOC_SPI/system/testbench/system.ipx
+Info: qsys-generate D:\th_soc\f\SOC_SPI\system.qsys --testbench=SIMPLE --output-directory=D:\th_soc\f\SOC_SPI --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading SOC_SPI/system.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 18.1]
+Progress: Parameterizing module clock
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding spi_master [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi_master
+Progress: Adding spi_slave [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi_slave
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index D:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx
+Info: D:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index D:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: D:\intelfpga_lite\18.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0.00 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.00 seconds
+Info: D:/th_soc/f/SOC_SPI/system/testbench/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index D:\th_soc\f\SOC_SPI\system\testbench\system.ipx
+Progress: Loading SOC_SPI/system.qsys
+Info: D:/th_soc/f/SOC_SPI/* matched 15 files in 0.00 seconds
+Info: D:/th_soc/f/SOC_SPI/ip/**/* matched 0 files in 0.00 seconds
+Info: D:/th_soc/f/SOC_SPI/*/* matched 317 files in 0.00 seconds
+Info: D:\th_soc\f\SOC_SPI\system\testbench\system.ipx described 0 plugins, 3 paths, in 0.01 seconds
+Progress: Loading testbench/system_tb.qsys
+Info: D:/th_soc/f/SOC_SPI/system/testbench/* matched 12 files in 0.01 seconds
+Info: D:/th_soc/f/SOC_SPI/system/testbench/*/* matched 9 files in 0.00 seconds
+Info: C:/Users/dongd/.altera.quartus/ip/18.1/**/* matched 0 files in 0.00 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
+Info: Reading index D:\intelfpga_lite\18.1\ip\altera\altera_components.ipx
+Info: D:\intelfpga_lite\18.1\ip\altera\altera_components.ipx described 2035 plugins, 0 paths, in 0.11 seconds
+Info: D:/intelfpga_lite/18.1/ip/**/* matched 139 files in 0.12 seconds
+Info: D:/intelfpga_lite/ip/**/* matched 0 files in 0.00 seconds
+Info: Reading index D:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx
+Info: D:\intelfpga_lite\18.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0.01 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/**/* matched 8 files in 0.01 seconds
+Info: Reading index D:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx
+Info: D:\intelfpga_lite\18.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0.01 seconds
+Info: D:/intelfpga_lite/18.1/quartus/common/librarian/factories/**/* matched 4 files in 0.01 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
+Info: D:\intelfpga_lite\18.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0.14 seconds
+Info: D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.14 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: system
+Info: TB_Gen: System design is: system
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clock CLASS_NAME
+Info: get_instance_assignment clock testbench.partner.map.clk_in
+Info: get_interface_property reset EXPORT_OF
+Info: get_instance_property clock CLASS_NAME
+Info: get_instance_assignment clock testbench.partner.map.clk_in_reset
+Info: send_message Info TB_Gen: Creating testbench system : system_tb with clock and reset BFMs
+Info: TB_Gen: Creating testbench system : system_tb with clock and reset BFMs
+Info: create_system system_tb
+Info: add_instance system_inst system 
+Info: set_use_testbench_naming_pattern true system
+Info: get_instance_interfaces system_inst
+Info: get_instance_interface_property system_inst clk CLASS_NAME
+Info: get_instance_interface_property system_inst reset CLASS_NAME
+Info: get_instance_interface_property system_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property system_inst clk CLASS_NAME
+Info: add_instance system_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property system_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value system_inst clk clockRate
+Info: set_instance_parameter_value system_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value system_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property system_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property system_inst clk CLASS_NAME
+Info: get_instance_interfaces system_inst_clk_bfm
+Info: get_instance_interface_property system_inst_clk_bfm clk CLASS_NAME
+Info: add_connection system_inst_clk_bfm.clk system_inst.clk
+Info: get_instance_interface_property system_inst reset CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: reset
+Info: TB_Gen: reset_sink found: reset
+Info: get_instance_interface_property system_inst reset CLASS_NAME
+Info: add_instance system_inst_reset_bfm altera_avalon_reset_source 
+Info: get_instance_property system_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_ports system_inst reset
+Info: get_instance_interface_port_property system_inst reset reset_reset_n ROLE
+Info: get_instance_interface_port_property system_inst reset reset_reset_n ROLE
+Info: set_instance_parameter_value system_inst_reset_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value system_inst_reset_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property system_inst_reset_bfm CLASS_NAME
+Info: get_instance_interfaces system_inst_reset_bfm
+Info: get_instance_interface_property system_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property system_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_property system_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value system_inst reset associatedClock
+Info: get_instance_interfaces system_inst_clk_bfm
+Info: get_instance_interface_property system_inst_clk_bfm clk CLASS_NAME
+Info: send_message Warning TB_Gen: system_inst_reset_bfm is not associated to any clock; connecting system_inst_reset_bfm to 'system_inst_clk_bfm.clk'
+Warning: TB_Gen: system_inst_reset_bfm is not associated to any clock; connecting system_inst_reset_bfm to 'system_inst_clk_bfm.clk'
+Info: add_connection system_inst_clk_bfm.clk system_inst_reset_bfm.clk
+Info: get_instance_interface_property system_inst reset CLASS_NAME
+Info: get_instance_interfaces system_inst_reset_bfm
+Info: get_instance_interface_property system_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_interface_property system_inst_reset_bfm reset CLASS_NAME
+Info: add_connection system_inst_reset_bfm.reset system_inst.reset
+Info: send_message Info TB_Gen: Saving testbench system: system_tb.qsys
+Info: TB_Gen: Saving testbench system: system_tb.qsys
+Info: save_system system_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: D:/th_soc/f/SOC_SPI/system/testbench/system_tb.qsys
+Info: Done
+Info: qsys-generate D:\th_soc\f\SOC_SPI\system.qsys --simulation=VERILOG --allow-mixed-language-simulation --testbench=SIMPLE --testbench-simulation=VERILOG --allow-mixed-language-testbench-simulation --output-directory=D:\th_soc\f\SOC_SPI\system\testbench\system_tb\simulation --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading testbench/system_tb.qsys
+Progress: Reading input file
+Progress: Adding system_inst [system 1.0]
+Progress: Parameterizing module system_inst
+Progress: Adding system_inst_clk_bfm [altera_avalon_clock_source 18.1]
+Progress: Parameterizing module system_inst_clk_bfm
+Progress: Adding system_inst_reset_bfm [altera_avalon_reset_source 18.1]
+Progress: Parameterizing module system_inst_reset_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: system_tb.system_inst.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: system_tb.system_inst_clk_bfm: Elaborate: altera_clock_source
+Info: system_tb.system_inst_clk_bfm:            $Revision: #1 $
+Info: system_tb.system_inst_clk_bfm:            $Date: 2018/07/18 $
+Info: system_tb.system_inst_reset_bfm: Elaborate: altera_reset_source
+Info: system_tb.system_inst_reset_bfm:            $Revision: #1 $
+Info: system_tb.system_inst_reset_bfm:            $Date: 2018/07/18 $
+Info: system_tb.system_inst_reset_bfm: Reset is negatively asserted.
+Info: system_tb: Generating system_tb "system_tb" for SIM_VERILOG
+Info: system_inst: "system_tb" instantiated system "system_inst"
+Info: system_inst_clk_bfm: "system_tb" instantiated altera_avalon_clock_source "system_inst_clk_bfm"
+Info: system_inst_reset_bfm: "system_tb" instantiated altera_avalon_reset_source "system_inst_reset_bfm"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/testbench/system_tb/simulation/submodules/verbosity_pkg.sv
+Info: jtag_uart_0: Starting RTL generation for module 'system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=system_jtag_uart_0 --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0082_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0082_jtag_uart_0_gen//system_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0082_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'system_jtag_uart_0'
+Info: jtag_uart_0: "system_inst" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "system_inst" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'system_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_onchip_memory2_0 --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0083_onchip_memory2_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0083_onchip_memory2_0_gen//system_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0083_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'system_onchip_memory2_0'
+Info: onchip_memory2_0: "system_inst" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: spi_master: Starting RTL generation for module 'system_spi_master'
+Info: spi_master:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=system_spi_master --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0084_spi_master_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0084_spi_master_gen//system_spi_master_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0084_spi_master_gen/  ]
+Info: spi_master: Done RTL generation for module 'system_spi_master'
+Info: spi_master: "system_inst" instantiated altera_avalon_spi "spi_master"
+Info: spi_slave: Starting RTL generation for module 'system_spi_slave'
+Info: spi_slave:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=system_spi_slave --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0085_spi_slave_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0085_spi_slave_gen//system_spi_slave_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0085_spi_slave_gen/  ]
+Info: spi_slave: Done RTL generation for module 'system_spi_slave'
+Info: spi_slave: "system_inst" instantiated altera_avalon_spi "spi_slave"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "system_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "system_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "system_inst" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'system_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=system_nios2_gen2_0_cpu --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0088_cpu_gen/ --quartus_bindir=D:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0088_cpu_gen//system_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0088_cpu_gen/  ]
+Info: cpu: # 2021.08.14 11:22:14 (*) Starting Nios II generation
+Info: cpu: # 2021.08.14 11:22:14 (*)   Checking for plaintext license.
+Info: cpu: # 2021.08.14 11:22:15 (*)   Couldn't query license setup in Quartus directory D:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2021.08.14 11:22:15 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.08.14 11:22:15 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.08.14 11:22:15 (*)   Plaintext license not found.
+Info: cpu: # 2021.08.14 11:22:15 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2021.08.14 11:22:15 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.08.14 11:22:15 (*)   Creating all objects for CPU
+Info: cpu: # 2021.08.14 11:22:16 (*)   Creating 'C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0088_cpu_gen//system_nios2_gen2_0_cpu_nios2_waves.do'
+Info: cpu: # 2021.08.14 11:22:16 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.08.14 11:22:16 (*)   Creating plain-text RTL
+Info: cpu: # 2021.08.14 11:22:16 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'system_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/testbench/system_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/testbench/system_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/testbench/system_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: system_tb: Done "system_tb" with 32 modules, 53 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=D:\th_soc\f\SOC_SPI\system_tb.spd --output-directory=D:/th_soc/f/SOC_SPI/system/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\th_soc\f\SOC_SPI\system_tb.spd --output-directory=D:/th_soc/f/SOC_SPI/system/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/th_soc/f/SOC_SPI/system/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/th_soc/f/SOC_SPI/system/testbench/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/th_soc/f/SOC_SPI/system/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/th_soc/f/SOC_SPI/system/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	32 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/th_soc/f/SOC_SPI/system/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/th_soc/f/SOC_SPI/system/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Platform Designer system

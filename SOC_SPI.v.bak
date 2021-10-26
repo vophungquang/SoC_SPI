@@ -1,0 +1,22 @@
+module SOC_SPI
+	(
+	input CLOCK_50,
+	input [0:0] KEY,
+	inout [3:0] GPIO	
+	);
+
+	system NIOS_system
+			(
+			.clk_clk	(CLOCK_50),
+			.reset_reset_n	(KEY[0]),
+			.spi_master_external_MISO	(GPIO[0]),
+			.spi_master_external_MOSI	(GPIO[1]),
+			.spi_master_external_SCLK	(GPIO[2]),
+			.spi_master_external_SS_n	(GPIO[3]),
+			.spi_slave_external_MISO	(GPIO[0]),
+			.spi_slave_external_MOSI	(GPIO[1]),
+			.spi_slave_external_SCLK	(GPIO[2]),
+			.spi_slave_external_SS_n	(GPIO[3])
+			);
+	
+endmodule

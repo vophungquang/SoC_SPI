@@ -1,0 +1,112 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\th_soc\f\SOC_SPI\system.qsys --block-symbol-file --output-directory=D:\th_soc\f\SOC_SPI\system --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading SOC_SPI/system.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 18.1]
+Progress: Parameterizing module clock
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding spi_master [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi_master
+Progress: Adding spi_slave [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi_slave
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\th_soc\f\SOC_SPI\system.qsys --synthesis=VERILOG --output-directory=D:\th_soc\f\SOC_SPI\system\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading SOC_SPI/system.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 18.1]
+Progress: Parameterizing module clock
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding spi_master [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi_master
+Progress: Adding spi_slave [altera_avalon_spi 18.1]
+Progress: Parameterizing module spi_slave
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: system: Generating system "system" for QUARTUS_SYNTH
+Info: jtag_uart_0: Starting RTL generation for module 'system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=system_jtag_uart_0 --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0030_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0030_jtag_uart_0_gen//system_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'system_jtag_uart_0'
+Info: jtag_uart_0: "system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "system" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'system_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_onchip_memory2_0 --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0031_onchip_memory2_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0031_onchip_memory2_0_gen//system_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'system_onchip_memory2_0'
+Info: onchip_memory2_0: "system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: spi_master: Starting RTL generation for module 'system_spi_master'
+Info: spi_master:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=system_spi_master --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0032_spi_master_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0032_spi_master_gen//system_spi_master_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_master: Done RTL generation for module 'system_spi_master'
+Info: spi_master: "system" instantiated altera_avalon_spi "spi_master"
+Info: spi_slave: Starting RTL generation for module 'system_spi_slave'
+Info: spi_slave:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=system_spi_slave --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0033_spi_slave_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0033_spi_slave_gen//system_spi_slave_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_slave: Done RTL generation for module 'system_spi_slave'
+Info: spi_slave: "system" instantiated altera_avalon_spi "spi_slave"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "system" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'system_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec D:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I D:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=system_nios2_gen2_0_cpu --dir=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0036_cpu_gen/ --quartus_bindir=D:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/dongd/AppData/Local/Temp/alt8853_5682640362425027758.dir/0036_cpu_gen//system_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2021.08.14 11:21:02 (*) Starting Nios II generation
+Info: cpu: # 2021.08.14 11:21:02 (*)   Checking for plaintext license.
+Info: cpu: # 2021.08.14 11:21:03 (*)   Couldn't query license setup in Quartus directory D:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2021.08.14 11:21:03 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.08.14 11:21:03 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.08.14 11:21:03 (*)   Plaintext license not found.
+Info: cpu: # 2021.08.14 11:21:03 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2021.08.14 11:21:03 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.08.14 11:21:03 (*)   Creating all objects for CPU
+Info: cpu: # 2021.08.14 11:21:04 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.08.14 11:21:04 (*)   Creating plain-text RTL
+Info: cpu: # 2021.08.14 11:21:04 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'system_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/th_soc/f/SOC_SPI/system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: system: Done "system" with 29 modules, 42 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,25 @@
+/*
+* nios_spi_1.c
+*
+* Created on: Oct 22, 2018
+* Author: johnsontimoj
+*/
+/////////////////////////////////
+//
+// SPI with NIOS loopback example - no spi_command
+//
+////////////////////////////////
+#include "alt_types.h"
+#include "altera_avalon_spi_regs.h"
+#include "altera_avalon_spi.h"
+#include "system.h"
+#include <stdio.h>
+#include <unistd.h>// usleep
+int main(void){
+printf("Entered Main\n");
+alt_u8 send_M;
+alt_u8 send_S;
+alt_u8 rcvd_S;
+alt_u8 rcvd_M;
+alt_u8 count;
+count = 0;

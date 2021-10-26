@@ -1,0 +1,34 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/do_an_nhom/SOC_SPI/software/spi/obj/default/runtime/sim/mentor
+vsystem_mm_interconnect_0_cmd_demux
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1629369737
+!i10b 1
+!s100 7RI8X0ECV`M7T`52UBD>J3
+IFolz^LiOj`>I7b]XLC2JZ3
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 system_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+w1628914936
+8D:/do_an_nhom/SOC_SPI/system/testbench/system_tb/simulation/submodules/system_mm_interconnect_0_cmd_demux.sv
+FD:/do_an_nhom/SOC_SPI/system/testbench/system_tb/simulation/submodules/system_mm_interconnect_0_cmd_demux.sv
+L0 43
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1629369737.000000
+!s107 D:/do_an_nhom/SOC_SPI/system/testbench/system_tb/simulation/submodules/system_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|D:/do_an_nhom/SOC_SPI/system/testbench/system_tb/simulation/submodules/system_mm_interconnect_0_cmd_demux.sv|-L|altera_common_sv_packages|-work|cmd_demux|
+!i113 1
+o-sv -L altera_common_sv_packages -work cmd_demux
+tCvgOpt 0

@@ -1,0 +1,41 @@
+# define TMT (1 << 5) //Transmitter shift-register empty# define TRDY (1 << 6) //Transmitter ready# define RRDY (1 << 7) //Receiver ready# define spi_base SPI_0_BASE //Define SPI_base, less typing# define spi_cs SPI_0_CS_BASE //Define SPI_base, less typing
+
+
+void spi_send(alt_u32 base,
+const alt_u8 regBit,
+const alt_u8 subRegBit)
+{
+
+IOWR_ALTERA_AVALON_SPI_CONTROL(base, 0x00); //Clear status register with zero&#39;s
+while(~IORD_ALTERA_AVALON_SPI_STATUS(base) & TRDY); //check if tx data register is empty. If not, keep looping until it is
+IOWR_ALTERA_AVALON_PIO_DATA(spi_cs, 0); //use this SPI-select, the one delivered by Altera doesn&#39;t work!!!
+IOWR_ALTERA_AVALON_SPI_SLAVE_SEL(base, 0x01); //slave select mask enable, slave selection device 0
+IOWR_ALTERA_AVALON_SPI_TXDATA(base, dummyBit); //write dummyBit to tx-buffer, so sending is possible
+usleep(10); //Sleep for 10 useconds. Needed, otherwise SDI2RGB-board will NOT receive any commands
+IOWR_ALTERA_AVALON_SPI_TXDATA(base, regBit); //write to tx-buffer
+IOWR_ALTERA_AVALON_SPI_TXDATA(base, subRegBit); //write to tx-buffer
+while(~IORD_ALTERA_AVALON_SPI_STATUS(base) & RRDY); //check if receiver is ready
+while(~IORD_ALTERA_AVALON_SPI_STATUS(base) & TMT); //check if transmitter shift register is empty
+IOWR_ALTERA_AVALON_PIO_DATA(spi_cs, 1); //use this SPI-select, the one delivered by Altera doesn&#39;t work!!!
+
+}
+
+/*
+* Start of SPI_receive function, 1 parameter is given:
+*
+* Base
+*/
+
+alt_u8 spi_receive(alt_u32 base)
+{
+alt_u8 data; //Variable for SPI data to be stored in
+IOWR_ALTERA_AVALON_PIO_DATA(spi_cs, 0); //use this SPI-select, the one delivered by Altera doesn&#39;t work!!!
+while(~IORD_ALTERA_AVALON_SPI_STATUS(base) & TRDY); //check if tx data register is empty. If not, keep looping until it is
+while(~IORD_ALTERA_AVALON_SPI_STATUS(base) & TMT); //check if transmitter shift register is empty
+while(~IORD_ALTERA_AVALON_SPI_STATUS(base) & RRDY); //check if receiver is ready
+data = 10; //variable for test-purpose
+IOWR_ALTERA_AVALON_SPI_RXDATA(base, data); //read from RX-register
+IOWR_ALTERA_AVALON_PIO_DATA(spi_cs, 1); //use this SPI-select, the one delivered by Altera doesn&#39;t work!!!
+return data;
+
+}
